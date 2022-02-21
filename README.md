@@ -1,7 +1,7 @@
 # esys-escript with viu and pyvista
 
 ## What is esys-escript?
-The ![esys.escript softwarew](https://github.com/esys-escript/esys-escript.github.io) is a module for implementing mathematical models in python using the finite element method (FEM). The underlying core libraries are written in C++.
+The ![esys.escript software](https://github.com/esys-escript/esys-escript.github.io) is a module for implementing mathematical models in python using the finite element method (FEM). The underlying core libraries are written in C++.
 
 ## What have we added
 The original ![official docker image](https://hub.docker.com/r/esysescript/esys-escript) does contains many tools that can be used for post-processing results, however we need two tools that were missing:
