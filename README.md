@@ -3,7 +3,7 @@
 ## What is esys-escript?
 The ![esys.escript softwarew](https://github.com/esys-escript/esys-escript.github.io) is a module for implementing mathematical models in python using the finite element method (FEM). The underlying core libraries are written in C++.
 
-## What have we added:
+## What have we added
 The original ![official docker image](https://hub.docker.com/r/esysescript/esys-escript) does contains many tools that can be used for post-processing results, however we need two tools that were missing:
 
 - `pyvista` -  a python package that uses matplotlib under the hood and creates standard bitmap files like png's: https://docs.pyvista.org/
@@ -11,6 +11,6 @@ The original ![official docker image](https://hub.docker.com/r/esysescript/esys-
 
 The Dockerfile creates an intermediate image which downloads and updates cargo. Then viu is installed. For the final image the viu binary is copied and pyvista is installed alongside with libraries for background rendering.
 
-## License:
+## License
 
 The Dockerfile and all other files in this repositry were released under "The Unlicense" in 2022 by Sebastian Langer.
