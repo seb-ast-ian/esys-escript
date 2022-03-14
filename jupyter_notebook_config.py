@@ -278,7 +278,7 @@ c.NotebookApp.enable_mathjax = False
 #c.NotebookApp.nbserver_extensions = {}
 
 ## The directory to use for notebooks and kernels.
-#c.NotebookApp.notebook_dir = ''
+c.NotebookApp.notebook_dir = '/notebooks'
 
 ## Whether to open in a browser after starting. The specific browser used is
 #  platform dependent and determined by the python standard library `webbrowser`
@@ -295,6 +295,8 @@ c.NotebookApp.open_browser = False
 #  
 #  The string should be of the form type:salt:hashed-password.
 #c.NotebookApp.password = ''
+# PASSWORD is "workshop"
+c.NotebookApp.password=u'argon2:$argon2id$v=19$m=10240,t=10,p=8$QmukmCRGW6RXb9W8DWfakg$KEKU66kF6ycqEI/O715myukrhbAj1jptAuPXwQqA98A'
 
 ## Forces users to use a password for the Notebook server. This is useful in a
 #  multi user environment, for instance when everybody in the LAN can access each
