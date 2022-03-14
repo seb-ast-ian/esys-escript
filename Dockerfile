@@ -14,5 +14,6 @@ MAINTAINER Sebastian Langer, 2022
 
 COPY --from=intermediate /root/.cargo/bin/viu /bin
 
-RUN apt-get update && apt install -y libgl1-mesa-glx xvfb && apt-get clean && rm -rf /var/lib/apt/lists/*
-RUN pip3 install pyvista
+RUN apt-get update && apt install -y libgl1-mesa-glx xvfb libffi-dev vim && apt-get clean && rm -rf /var/lib/apt/lists/*
+RUN pip3 install pyvista jupyterlab && pip3 install --upgrade traitlets
+COPY jupyter_notebook_config.py /root/.jupyter/
