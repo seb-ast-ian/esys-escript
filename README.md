@@ -1,4 +1,6 @@
-# esys-escript with viu and pyvista
+# esys-escript with viu, pyvista and jupyter notebook
+
+**WARNING: very unsecure jupyter notebook for quick internal presentation mode, not suitable for production**
 
 ## What is esys-escript?
 The ![esys.escript software](https://github.com/esys-escript/esys-escript.github.io) is a module for implementing mathematical models in python using the finite element method (FEM). The underlying core libraries are written in C++.
